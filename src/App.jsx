@@ -13,6 +13,8 @@ function App() {
     duration: 10,
   });
 
+  const durationIsValid = userInput.duration > 0;
+
   // created dinamis funtion
   function handleUserInput(inputKey, newValue) {
     setUserInput((existingUserInput) => {
