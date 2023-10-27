@@ -21,6 +21,7 @@ function Calculator({ onChangeProps, userInput }) {
           />
         </p>
       </div>
+
       <div className="input-group">
         <p>
           <label>Perkiraan Balik Modal</label>

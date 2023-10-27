@@ -27,7 +27,12 @@ function App() {
     <>
       <Header />
       <Calculator onChangeProps={handleUserInput} userInput={userInput} />
-      <Result resultInput={userInput} />
+      {/* <Result resultInput={userInput} /> */}
+
+      {!durationIsValid && (
+        <p style={{ textAlign: "center" }}>Masukkan Durasi diatas 0</p>
+      )}
+      {durationIsValid && <Result resultInput={userInput} />}
     </>
   );
 }
